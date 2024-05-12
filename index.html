@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Tools</title>
+    <style>
+      .content {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid antiquewhite;
+        padding-bottom: 20px;
+      }
+      hr {
+        border-bottom: 1px solid antiquewhite;
+        min-width: 80%;
+      }
+      .speeds {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+      }
+      .speeds > button {
+        margin-right: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p><button id="repeat-injector">Inject Repeater</button></p>
+      <hr>
+      <p><button id="speed-injector">Inject Speed Controls</button></p>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
