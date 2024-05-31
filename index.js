@@ -191,9 +191,9 @@ async function injectRepeater() {
 
             <div id="controls" class="controls hide">
               <div class="speeds"><button id="active">Start Repeating</button></div>
-              <div class="speeds">Start: <input type="range" id="start-time" step="0.01" min="0" value="0" onchange="document.getElementById('start-value').innerText = this.value"> <span id="start-value"></span></div>
-              <div class="speeds">End: <input type="range" id="end-time" step="0.01" min="0" onchange="document.getElementById('end-value').innerText = this.value"> <span id="end-value"></span></div>
-              <div class="speeds">Speed: <input type="range" id="speed" value="1" step="0.05" min="0.25" max="3" onchange="document.getElementById('speed-value').innerText = this.value"> <span id="speed-value"></span></div>
+              <div class="speeds">Start: <input type="range" id="start-time" step="0.01" min="0" value="0" oninput="document.getElementById('start-value').innerText = this.value"> <span id="start-value"></span></div>
+              <div class="speeds">End: <input type="range" id="end-time" step="0.01" min="0" oninput="document.getElementById('end-value').innerText = this.value"> <span id="end-value"></span></div>
+              <div class="speeds">Speed: <input type="range" id="speed" value="1" step="0.05" min="0.25" max="3" oninput="document.getElementById('speed-value').innerText = this.value"> <span id="speed-value"></span></div>
             </div>
             <div class="speeds">
               <div class="dragger" id="dragger">Dragger</div>
@@ -219,6 +219,7 @@ async function injectRepeater() {
             text-align: center;
             justify-content: center;
             margin: 5px;
+            color: white;
           }
           .dragger {
             border: 1px solid salmon;
@@ -230,6 +231,7 @@ async function injectRepeater() {
             text-align: center;
             margin: 5px;
             cursor: grab;
+            color: black;
           }
           .hide {
             display: none;
